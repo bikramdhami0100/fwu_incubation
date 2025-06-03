@@ -31,6 +31,7 @@ class AdminController extends Controller
             // }
             if($password==$admin->password){
                 Session::put('admin',$admin);
+                Session::put('admin_id',$admin->id);
                 return redirect()->route('admin.dashboard');
             }else{
                 return redirect()->back()->with('error','Invalid Credentials');

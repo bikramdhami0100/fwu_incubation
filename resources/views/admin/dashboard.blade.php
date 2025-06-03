@@ -6,4 +6,5 @@
 @section('content')
     <h1 class="text-2xl font-bold mb-4">Welcome to the Incubation Center</h1>
     <!-- Dashboard content here -->
+     {{Session::get('admin_id')}}
 @endsection

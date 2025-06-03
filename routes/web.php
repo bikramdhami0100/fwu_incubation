@@ -22,3 +22,4 @@ Route::post('/news-updates',[NewsController::class,'store'])->name('admin.news.s
 Route::get('/news-updates/{id}/edit',[NewsController::class,'edit'])->name('admin.news.edit');
 Route::put('/news-updates/{id}',[NewsController::class,'update'])->name('admin.news.update');
 Route::delete('/news-updates/{id}',[NewsController::class,'destroy'])->name('admin.news.destroy');
+Route::get('/news/show/{id}',[NewsController::class,'show'])->name('admin.news.show');
